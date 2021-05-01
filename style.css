@@ -1,0 +1,36 @@
+ .body {
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex: 1 1 0;
+    
+
+    
+}
+
+.flex-image {
+       width: 50%;
+}
+
+.flex-item {
+    display:grid;
+    background-color: hsl(244, 38%, 16%);
+    width: 50%;
+}
+
+.low {
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.down {
+display: flex;
+justify-content: center;
+}
+    
