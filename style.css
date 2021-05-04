@@ -1,25 +1,31 @@
  .body {
     background-color: hsl(233, 47%, 7%);
     color: white;
-    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 .flex-container {
     display: flex;
-    flex: 1 1 0;
+    
+    margin: 180px;
     
 
     
 }
 
 .flex-image {
+    display: flex;
        width: 50%;
+       background-image: linear-gradient(to right,  hsla(277, 64%, 61%,0.65) 0%, hsla(277, 64%, 61%, 0.65) 100%), url("images/image-header-mobile.jpg");
+       max-width: 50%;
 }
 
 .flex-item {
     display:grid;
     background-color: hsl(244, 38%, 16%);
     width: 50%;
+    padding: 46px;
+    max-width: 50%;
 }
 
 .low {
@@ -34,3 +40,16 @@ display: flex;
 justify-content: center;
 }
     
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+.purple-text {
+    color: hsl(277, 64%, 61%);
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
