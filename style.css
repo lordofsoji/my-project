@@ -1,126 +1,137 @@
- .body {
-    background-color: hsl(233, 47%, 7%);
-    color: white;
-    font-family: 'Lexend Deca', sans-serif;
-    display: grid;
-    margin: auto;
-    height:150vh;
-    font-size: 15px;
+                  /* Body */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.flex-container {
-    display: flex;
-    margin: auto;  
-    max-width:1080px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: auto;
-   
+                  
+body {
+    Font-size: 15px;
+    font-family: "Lexend Deca",sans-serif;
+    background-color: #f2f2f2;
 }
-
-
-.flex-container>div {
-    display: flex;
-    flex: 0 0 50%;
-}
-
-.flex-image {
-    background-color: hsl(277, 64%, 61%);
-    
-}
-
-.flex-image>img {
-    opacity: 0.5;
-
-}
-
-.flex-item {
-    background-color: hsl(244, 38%, 16%);
-    flex-direction:column; 
-    justify-content: center; 
-    text-align: center;
-}
-
-h1, h2, h3 {
-    font-family: 'Inter', sans-serif;
-    color: white;
-}
-
-.purple-text {
-    color: hsl(277, 64%, 61%);
-}
-
-.stat {
-    display: flex;
-    justify-content: space-around;
+             /* Main container */
+.main-box {
     width: 100%;
-    color: hsl(0, 0%, 100%);
-    margin-top: 100px;
+    margin: 100px auto; 
+    
+}
+            /* small container */
+
+.small-box {
+    width: 325px;
+    margin: 0 auto;
+    height: 440px;
+    padding-left: 48px;
 }
 
-.discover {
-    margin-bottom: 50px;
+.small-box p {
     color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 50px;
+    line-height: 25px;
+    opacity: 0.80;
+    max-width: 230px;
+}
+
+.small-box h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+.small-box .icon {
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+                /* Box background-color */
+
+#sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+     border-radius:  0 0 10px 10px;
+}
     
-    
-}
+                    /* Button */
+.button-sedan {
+    color: hsl(31, 77%, 52%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+  }
+.button-suv {
+    color: hsl(184, 100%, 22%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+   }
+  .button-luxury {
+    color: hsl(179, 100%, 13%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+  }
 
-.stat-figure {
-    color: hsla(0, 0%, 100%, 0.6);
-}
+                   /* button hover */
 
-.name {
-    color:hsl(277, 64%, 61%);
-}
+  .button-sedan:hover {
+    color: hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: transparent;
 
-.frontend {
-    color:hsl(277, 64%, 61%);
-}
+  }
+  .button-suv:hover {
+    color: hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+  }
 
+  .button-luxury:hover {
+    color: hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+  }
 
-img {
-    display: block;
-}
+               /* media queries */
 
-@media screen and (max-width:380px) {
-    .flex-container {
-         flex-direction: column-reverse;
-         flex-wrap: wrap;
-         width: auto;
-            
+  @media screen and (min-width: 1000px) {
+    .main-box {
+      display: flex;
+      width: 960px;
     }
-    .flex-image>img {
-        width: 320px;
-        height: auto;
-        margin: 0 auto;
+
+    #sedan {
+      border-radius: 10px 0 0 10px;
     }
-
-
-.flex-image {
-    width: 320px;
-    height: auto;
-    margin: 0 auto;
-}
-.flex-item {
-    width: 320px;
-    height: auto;
-    margin: 0 auto;
-}
-
-.discover{
-    text-align: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    #suv {
+      background-color: hsl(184, 100%, 22%);
+    }
+    #luxury {
+      border-radius: 0px 10px 10px 0;
+      background-color: hsl(179, 100%, 13%);
+    }
     
+  }
+
     
-    
-}
-
-.stat {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-}
-
