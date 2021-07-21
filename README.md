@@ -26,12 +26,6 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-### Screenshot
-
-<img src = "C:\Users\user\Desktop\Front-end mentor tasks\3-column-preview-card-component-main\read me\Screenshot (53).png  ">
-
-
-
 ### Links
 
 - Live Site URL: [https://3cardcomponents.netlify.app/]
@@ -88,7 +82,7 @@ I always saw this code in almost every code i read, through  Stackoverflow i was
 
 - Website - [Damilare Sojirin]
 - Frontend Mentor - [https://www.frontendmentor.io/profile/lordofsoji]
-- Twitter - [@fidelsoji](
+- Twitter - [@fidelsoji]
 
 
 ## Acknowledgments
